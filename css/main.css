@@ -10,12 +10,22 @@ body{
     font-family: helvetica neue,Helvetica,Arial,sans-serif;
     background: var(--color-bg-main);
 }
-h2,h3{
+h2,h3,h4,h5{
     font-family: open sans,Arial,sans-serif;
+    color: var(--color-gay);
     
 }
 a{
     
+}
+a:hover,
+a:active{
+    text-decoration: none;
+    color: var(--color-orange);
+}
+
+.bg-white{
+    background: #fff;
 }
 
 .topNav{
@@ -32,6 +42,7 @@ a{
 }
 .topNav .dropdown a:hover{
     cursor: pointer;
+    color: #fff;
 }
 .topNav .dropdown .dropdown-menu a{
     color: var(--color-gay);
@@ -61,7 +72,7 @@ header nav ul li.active a{
     background: var(--color-bg-main);
 }
 .btn.more i{
-    right: 0.5em;
+    right: 1em;
     top: 50%;
     color: #fff;
     -webkit-transform: translateY(-50%);
@@ -72,7 +83,31 @@ header nav ul li.active a{
     color: var(--color-white);
 }
 .cryptocurrency h2{
-    font-size: 33px
+    font-size: 33px;
+    color: #fff;
+}
+.cryptocurrency form input{
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 3px  solid #fff;
+}
+.cryptocurrency form input::-webkit-input-placeholder {
+    color: #fff;
+}
+.cryptocurrency form input:-ms-input-placeholder {
+    color: #fff;
+}
+.cryptocurrency form input::placeholder {
+    color: #fff;
+}
+.cryptocurrency form label{
+    right: 0.5em;
+}
+.cryptocurrency form input:focus + label .fa-search:before{
+    content: "\f00d";
+    color: #000;
+    font-size: 20px;
 }
 
 .coinContent{
@@ -136,7 +171,8 @@ header nav ul li.active a{
     
 }
 .why h4{
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: normal;
 }
 .why .fa-check{
     color: #7ed321;
@@ -175,3 +211,70 @@ header nav ul li.active a{
     font-weight: bold;
     color: var(--color-orange);
 }
+
+.support h3{
+    font-size: 18px;
+    color: var(--color-gay);
+    font-weight: normal;
+}
+.support .fa-circle{
+    color: #7ed321;
+}
+.supportCard{
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    color: #000;
+    width: 49%;
+}
+.supportCard span{
+    font-size: 14px;
+}
+.supportCard p{
+    font-size: 22px;
+    font-weight: bold;
+}
+.supportCard i{
+    color: var(--color-bg-main);
+}
+
+.payment{
+    
+}
+.payment a{
+    color: var(--color-bg-main);
+}
+
+
+.social a{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--color-bg-main);
+}
+.social a i{
+    font-weight: normal;
+}
+
+.topFooter{
+    color: var(--color-gay);
+}
+.topFooter h2{
+    font-size: 26px;
+}
+.topFooter a{
+    color: var(--color-gay);
+}
+.topFooter > div{
+    width: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

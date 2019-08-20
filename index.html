@@ -26,8 +26,13 @@
                         <span>English</span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="selectLang"> 
-                        <a class="dropdown-item" href="#">Action</a> 
-                        <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> 
+                        <a class="dropdown-item" href="#">Spanish</a> 
+                        <a class="dropdown-item" href="#">Deutsch</a> 
+                        <a class="dropdown-item" href="#">German</a> 
+                        <a class="dropdown-item" href="#">Russia</a> 
+                        <a class="dropdown-item" href="#">Chinese</a> 
+                        <a class="dropdown-item" href="#">French</a> 
+                        <a class="dropdown-item" href="#">Portugese</a> 
                     </div>
                 </div>
             </div>
@@ -72,18 +77,16 @@
 
         <main role="main">
             <div class="container">
-                <div class="row">
-                    <div class="cryptocurrency col-md-12 text-center py-2">
+                <div class="row pb-4">
+                    <div class="cryptocurrency w-100 text-center py-2">
                         <h2 class="pt-5 mb-4">Cryptocurrency - buy, sell and store</h2>
-                        <form class="form-inline">
-                            <input class="form-control w-50 mx-auto py-4" type="text" placeholder="Search" aria-label="Search">
+                        <form class="form-inline w-50 mx-auto py-4 position-relative">
+                            <input id="cryptocurrencySearch" class="form-control w-100 text-center" type="text" placeholder="Search here for your cryptocurrency" aria-label="Search">
+                            <label for="cryptocurrencySearch" class="position-absolute"><i class="fas fa-search"></i></label>
                         </form>
                     </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="coinCard d-flex flex-wrap  col-md-12 text-center py-3">
+   
+                    <div class="coinCard d-flex flex-wrap w-100 text-center py-4">
                         <div class="coinItem d-flex justify-content-between bg-light rounded py-4 px-3">
                             <div class="coinContent text-left">
                                 <h4>Bitcoin</h4>
@@ -171,9 +174,9 @@
                 </div>
             </div>
             
-            <div class="bg-light">
+            <div class="bg-white">
                 <div class="container">
-                    <div class="row pt-5 pb-3">
+                    <div class="row py-5">
                         <div class="ceateAccount col-md-12 text-center py-5">
                             <button type="button" class="btn btn-primary mx-2 font-weight-bold">Create account</button>
                             <button type="button" class="btn btn-outline-primary mx-2 font-weight-bold">Login</button>
@@ -236,9 +239,16 @@
                             <div class="col-md-12 text-center mt-5">
                                 <button class="btn btn-primary w-25 more position-relative" type="button">More about BitCapo <i class="fas fa-arrow-right position-absolute"></i></button>
                             </div>
-                        </div>
+                        </div>                                              
                         
-                        <div class="rate w-100 mt-5 pt-5 text-center">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-light">
+                <div class="container">
+                    <div class="row py-5">
+                        <div class="rate w-100 text-center pb-5">
                             <div class="col-md-12">
                                 <h3 class="rounded-circle d-inline-block">8.8</h3>
                             </div>
@@ -253,8 +263,8 @@
                                 <span>1654 reviews</span>
                                 <p><i class="fas fa-medal"></i> Trustpilot</p>
                             </div>
-                            
-                            <div class="rateTerm col-md-12 d-flex justify-content-between flex-wrap">
+
+                            <div class="rateTerm col-md-12 d-flex justify-content-between flex-wrap mt-4">
                                 <div class="rateTermCard text-left col-md-3">
                                     <div class="d-flex flex-wrap align-items-end justify-content-between flex-wrap pt-3 pb-4">
                                         <div>
@@ -314,19 +324,159 @@
                                 </div>
                             </div>
                             <div class="col-md-12 text-center mt-5">
-                                <button class="btn btn-primary w-25 more position-relative" type="button">More about BitCapo <i class="fas fa-arrow-right position-absolute"></i></button>
+                                <button class="btn btn-primary w-25 more position-relative mt-2" type="button">Show all reviews <i class="fas fa-arrow-right position-absolute"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <hr>
+                        </div>
+                        
+                        <div class="support w-100 text-center pt-4 pb-3">
+                            <h2 class="d-block w-100 my-3">Support</h2>
+                            <h3><i class="fas fa-circle mr-2"></i> Available between: 09:00 - 21:00.</h3>
+                            <div class="d-flex flex-wrap justify-content-between text-left">
+                                <a href="#" class="supportCard d-flex flex-wrap justify-content-between align-items-center bg-white px-3 py-3 mt-3 mb-2">
+                                    <div>
+                                        <span>EMAIL US</span>
+                                        <p class="my-0">emai@email.com</p>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-phone fa-2x mr-3"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="supportCard d-flex flex-wrap justify-content-between align-items-center bg-white px-3 py-3 mt-3 mb-2">
+                                    <div>
+                                        <span>FACEBOOK</span>
+                                        <p class="my-0">Ask your question on</p>
+                                    </div>
+                                    <div>
+                                        <i class="fab fa-facebook-square fa-2x mr-3"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="supportCard d-flex flex-wrap justify-content-between align-items-center bg-white px-3 py-3 mt-3 mb-2">
+                                    <div>
+                                        <span>CONTACT FORMS</span>
+                                        <p class="my-0">Chat or contact form</p>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-mail-bulk fa-2x mr-3"></i>
+                                    </div>
+                                </a>
+                                <a href="#" class="supportCard d-flex flex-wrap justify-content-between align-items-center bg-white px-3 py-3 mt-3 mb-2">
+                                    <div>
+                                        <span>FAQs</span>
+                                        <p class="my-0">Frequently asked questions</p>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-comments fa-2x mr-3"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-12 text-center mt-5">
+                                <button class="btn btn-primary w-25 more position-relative mt-2" type="button">Supportpage <i class="fas fa-arrow-right position-absolute"></i></button>
                             </div>
                         </div>
                         
                     </div>
                 </div>
             </div>
+            
+            <div class="bg-white">
+                <div class="container">
+                    <div class="row py-5">
+                        <div class="payment w-100 text-center pt-2 pb-5">
+                            <h2 class="d-block w-100 my-3">Payment methods</h2>
+                            <div class="d-flex flex-wrap justify-content-between align-items-center mt-5">
+                                <a href="#"><i class="fab fa-cc-visa fa-4x"></i></a>
+                                <a href="#"><i class="fab fa-cc-stripe fa-4x"></i></a>
+                                <a href="#"><i class="fab fa-cc-paypal fa-4x"></i></a>
+                                <a href="#"><i class="fab fa-cc-mastercard fa-4x"></i></a>
+                                <a href="#"><i class="fab fa-cc-jcb fa-4x"></i></a>
+                                <a href="#"><i class="fab fa-cc-discover fa-4x"></i></a>
+                                <a href="#"><i class="fab fa-cc-diners-club fa-4x"></i></a>
+                                <a href="#"><i class="fab fa-cc-apple-pay fa-4x"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <hr>
+                        </div>
+                        
+                        <div class="ceateAccount col-md-12 text-center pt-4 pb-3">
+                            <h2 class="d-block w-100 mt-3 mb-4 pb-3">Start with cryptocurrency now</h2>
+                            <button type="button" class="btn btn-primary mx-2 font-weight-bold">Create account</button>
+                            <button type="button" class="btn btn-outline-primary mx-2 font-weight-bold">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-light">
+                <div class="container">
+                    <div class="row pt-4 pb-2">
+                        <div class="social w-100 d-flex flex-wrap justify-content-between align-items-center mt-2">
+                            <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                        </div>
+                    </div>
+                </div>
                 
-
+            </div>
         </main>
-        <hr>
-        <footer class="container">
-            <p>&copy; Company 2017-2019</p>
+        <footer class="bg-light">
+            <div class="container">
+                <div class="row pb-5">
+                    <div class="col-md-12">
+                        <hr>
+                    </div>
+                    <div class="topFooter w-100 d-flex flex-wrap justify-content-between mt-4">
+                        <div>
+                            <div class="footerLogo mb-3">
+                                Logo
+                            </div>
+                            <p>Tòa nhà tài chính Bitexco, 7, 2 Hải Triều, Bến Nghé, Quận 1, Hồ Chí Minh</p>
+                            <p>Chamber of commerce: 63661438</p>
+                            <p>IBAN: NL22 ABNA 0544 8782 64</p>
+                        </div>
+                        <div>
+                            <h2 class="mb-3">Quick links to</h2>
+                            <ul class="list-unstyled">
+                                <li><a class="d-inline-block pt-3 pb-2" href="#">Buy</a></li>
+                                <li><a class="d-inline-block pt-3 pb-2" href="#">Sell</a></li>
+                                <li><a class="d-inline-block pt-3 pb-2" href="#">My wallet</a></li>
+                                <li><a class="d-inline-block pt-3 pb-2" href="#">My account</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="mb-4">FAQs</h2>
+                            <ul class="list-unstyled">
+                                <li><a class="d-inline-block pt-3 pb-2" href="#">How do I create an account?</a></li>
+                                <li><a class="d-inline-block pt-3 pb-2" href="#">What are cryptocurrencies?</a></li>
+                                <li><a class="d-inline-block pt-3 pb-2" href="#">What is a cryptocurrency Wallet?</a></li>
+                                <li><a class="d-inline-block pt-3 pb-2" href="#">Partner program</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="mb-4">Languages</h2>
+                            <ul class="list-unstyled">
+                                <li><a class="d-inline-block pt-2 pb-1" href="#">English</a></li>
+                                <li><a class="d-inline-block pt-2 pb-1" href="#">Spanish</a></li>
+                                <li><a class="d-inline-block pt-2 pb-1" href="#">Deutsch</a></li>
+                                <li><a class="d-inline-block pt-2 pb-1" href="#">German</a></li>
+                                <li><a class="d-inline-block pt-2 pb-1" href="#">Russia</a></li>
+                                <li><a class="d-inline-block pt-2 pb-1" href="#">Chinese</a></li>
+                                <li><a class="d-inline-block pt-2 pb-1" href="#">French</a></li>
+                                <li><a class="d-inline-block pt-2 pb-1" href="#">Portugese</a></li>
+                            </ul>
+                            <h2 class="mt-4">Contact</h2>
+                            <p class="my-0"><i class="fas fa-phone-volume mr-2"></i> +31 (0) 10 307 48 20</p>
+                            <p class="my-0"><i class="fas fa-circle mr-2"></i> We are available now</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
     <!-- Custom JS -->
