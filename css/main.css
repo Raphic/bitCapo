@@ -1,0 +1,177 @@
+:root{
+    --color-bg-main: #1ab394;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-gay: #555;
+    --color-orange: #f8ac59
+}
+
+body{
+    font-family: helvetica neue,Helvetica,Arial,sans-serif;
+    background: var(--color-bg-main);
+}
+h2,h3{
+    font-family: open sans,Arial,sans-serif;
+    
+}
+a{
+    
+}
+
+.topNav{
+    font-size: 14px;
+}
+.topNav a{
+    color: var(--color-white);
+}
+.topNav .dropdown a{
+    color: var(--color-white);
+    font-size: 14px;
+    outline: 0!important;
+    border: none;
+}
+.topNav .dropdown a:hover{
+    cursor: pointer;
+}
+.topNav .dropdown .dropdown-menu a{
+    color: var(--color-gay);
+}
+
+header a{
+    font-size: 16px;
+    color: var(--color-gay);
+    
+}
+header nav ul li.active a{
+    color: var(--color-black);
+    font-weight: bold;
+    border-bottom: 5px solid var(--color-orange);
+}
+
+.btn-primary{
+    background: var(--color-orange);
+    border: var(--color-orange);
+}
+.btn-outline-primary{
+    color: var(--color-orange);
+    border-color: var(--color-orange);
+}
+.btn.more{
+    font-size: 14px;
+    background: var(--color-bg-main);
+}
+.btn.more i{
+    right: 0.5em;
+    top: 50%;
+    color: #fff;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.cryptocurrency{
+    color: var(--color-white);
+}
+.cryptocurrency h2{
+    font-size: 33px
+}
+
+.coinContent{
+    
+}
+.coinItem{
+    width: 13%;
+    margin: 0 0.614%;
+}
+.coinItem h4{
+    font-size: 14px;
+    font-weight: bold;
+}
+.coinItem p{
+    font-size: 17px;
+}
+.coinItem .fa-level-up-alt{
+    color: green;
+}
+.coinItem .fa-level-down-alt{
+    color: red;
+}
+.coinItem figure img{
+    width: 28px;
+}
+.coinItem figure figcaption{
+    font-size: 12px;
+}
+
+.ceateAccount .btn{
+    width: 360px;
+    height: 54px;
+    line-height: 54px;
+    padding: 0;
+    border-width: 2px;
+}
+
+.howCard{
+    color: var(--color-bg-main);
+    border: 1px solid var(--color-orange);
+    border-radius: 10px;
+    width: 30%;
+    margin:  1.665%;
+}
+.howCard > p{
+    font-size: 24px;
+}
+.howCard h3{
+    font-size: 20px;
+}
+.howCard span{
+    color: var(--color-gay);
+}
+.howCard a{
+    left: 0;
+    bottom: 2em;
+    color: var(--color-bg-main);
+}
+
+.why{
+    
+}
+.why h4{
+    font-size: 20px;
+}
+.why .fa-check{
+    color: #7ed321;
+}
+
+.rate h3{
+    width: 75px;
+    height: 75px;
+    line-height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--color-bg-main);
+    border: 5px solid var(--color-orange);
+}
+.rate i{
+    color: #999;
+}
+.rate i.active{
+    color: var(--color-bg-main);
+}
+.rateTrue p{
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+.rateTrue p i {
+    font-size: 28px;
+    color: #000;
+}
+.rateTermCard{
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+.rateTermCard h5{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color-orange);
+}
