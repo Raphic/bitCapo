@@ -9,6 +9,7 @@ function isIE() {
 /* Main js========================================================*/
 include('js/jquery-3.4.1.min.js');
 include('js/jquery-ui.min.js');
+include('js/swiper.min.js');
 /* Boostap ========================================================*/
 include('js/bootstrap/popper.min.js');
 include('js/bootstrap/bootstrap.min.js');

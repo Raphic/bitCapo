@@ -202,7 +202,9 @@ header nav ul li.active a{
     font-size: 28px;
     color: #000;
 }
+
 .rateTermCard{
+    padding: 0 1rem;
     border: 1px solid #ccc;
     font-size: 14px;
 }
@@ -210,6 +212,14 @@ header nav ul li.active a{
     font-size: 14px;
     font-weight: bold;
     color: var(--color-orange);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.rateTermCard .content{
+    height: 42px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .support h3{
