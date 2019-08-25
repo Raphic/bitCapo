@@ -3,7 +3,8 @@
     --color-black: #000;
     --color-white: #fff;
     --color-gay: #555;
-    --color-orange: #f8ac59
+    --color-orange: #f8ac59;
+    --color-check :#7ed321;
 }
 
 body{
@@ -71,7 +72,7 @@ header nav ul li.active a{
     font-size: 14px;
     background: var(--color-bg-main);
 }
-.btn.more i{
+.btn .fa-arrow-right{
     right: 1em;
     top: 50%;
     color: #fff;
@@ -102,7 +103,7 @@ header nav ul li.active a{
     color: #fff;
 }
 .cryptocurrency form label{
-    right: 0.5em;
+    right: 1.5em;
 }
 .cryptocurrency form input:focus + label .fa-search:before{
     content: "\f00d";
@@ -175,7 +176,7 @@ header nav ul li.active a{
     font-weight: normal;
 }
 .why .fa-check{
-    color: #7ed321;
+    color: var(--color-check);
 }
 
 .rate h3{
@@ -228,7 +229,7 @@ header nav ul li.active a{
     font-weight: normal;
 }
 .support .fa-circle{
-    color: #7ed321;
+    color: var(--color-check);
 }
 .supportCard{
     border: 1px solid #ccc;
@@ -262,6 +263,85 @@ header nav ul li.active a{
 }
 .social a i{
     font-weight: normal;
+}
+
+.register{
+    
+}
+.progressbar{
+    z-index: 2;
+}
+.progressbar:after{
+    content: '';
+    width: calc(100% - 30px);
+    height: 2px;
+    display: block;
+    position: absolute;
+    background: var(--color-bg-main);
+    right: 5px;
+    top: calc(50% - 14px);
+    z-index: -1;
+}
+.progressbarItem{
+    color: var(--color-bg-main);
+}
+.progressbarItem .rounded-circle{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    background: #fff;
+    border: 2px solid var(--color-bg-main);
+}
+
+.progressbarItem .rounded-circle.active{
+    background: var(--color-bg-main);
+    color: #fff;
+}
+.progressbarItem .rounded-circle.passed{
+    background: var(--color-check);
+    border-color: var(--color-check);
+    color: #fff;
+}
+
+.register-frm,
+.register-frm input,
+.register-frm select{
+    font-size: 14px;
+}
+.reFrm-top{
+    color: var(--color-bg-main);
+}
+.reFrm-title{
+    font-size: 26px;
+    font-weight: normal;
+    color: var(--color-bg-main);
+}
+.showPass{
+    height: calc(1.5em + .75rem + 2px);
+    border: 1px solid #ced4da;
+    background: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: .25rem;
+    line-height: 2.2rem;
+    color: #ccc;
+}
+
+
+.verifyEmail{
+    border-color: var(--color-bg-main);
+    color: var(--color-bg-main);
+    width: inherit;
+}
+.verifyEmail + label{
+    top:  6px;
+    right: 0.5em;
+    color: var(--color-bg-main);
+    cursor: pointer;
+}
+.authenCode{
+    width: inherit;
 }
 
 .topFooter{

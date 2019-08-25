@@ -9,6 +9,27 @@
 /* 992px 
 ----------------------------------------------------------*/
 @media only screen and (max-width: 992px) {
+    #navMain ul + div{
+        text-align: center;
+    }
+    #navMain ul + div a{
+        display: block;
+        margin: 3rem  auto 1rem;
+    }
+    #navMain ul + div button{
+        width: 90%;
+        display: block;
+        margin: 1rem auto;
+    }
+    #navMain ul li:not(.active) a{
+        border-bottom: 1px solid #ccc;
+    }
+    #navMain ul li  a{
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+    
+    
     .coinItem{
         width: 24%;
         margin: 0.5%;
@@ -40,8 +61,7 @@
         border-radius: 4px;
         padding: 0.25rem 0.5rem !important;
         margin-bottom: 0.5rem;
-    }
-    
+    }           
 }
 /* 768px 
 ----------------------------------------------------------*/
@@ -81,6 +101,23 @@
     .rateStar i{
         font-size: 3rem;
     }
+    
+    .progressbarItem .rounded-circle{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+    }
+    .progressbar:after{
+        width: 81%;
+        right: 7%;
+    }
+    .progressbarItem .rounded-circle.active + small{
+        display: block !important;
+    }
+    .progressbarItem .rounded-circle + small{
+        display: none !important;
+    } 
 }
 /* 480px 
 ----------------------------------------------------------*/
