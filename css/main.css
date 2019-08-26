@@ -1,42 +1,90 @@
 :root{
+/*
     --color-bg-main: #1ab394;
     --color-black: #000;
     --color-white: #fff;
     --color-gay: #555;
     --color-orange: #f8ac59;
     --color-check :#7ed321;
+*/
+    --color-primary : #2b2b2b;
+    --color-secondary: #3c3c3c;
+    --color-text: #f7931a;
+    --color-check :#7ed321;
+    --color-up: #07ff19;
+    --color-down: #ff0707; 
 }
 
 body{
     font-family: helvetica neue,Helvetica,Arial,sans-serif;
-    background: var(--color-bg-main);
+    background: var(--color-primary);
+    color: var(--color-text);
 }
 h2,h3,h4,h5{
     font-family: open sans,Arial,sans-serif;
-    color: var(--color-gay);
     
 }
 a{
-    
+    color: var(--color-text);
 }
 a:hover,
 a:active{
-    text-decoration: none;
-    color: var(--color-orange);
+    color: var(--color-text);
 }
 
-.bg-white{
-    background: #fff;
+.bg-main{
+    background: var(--color-primary);
 }
+.bg-secon{
+    background: var(--color-secondary);
+}
+.text-orange{
+    color: var(--color-text) !important; 
+}
+.btn-primary{
+    background: var(--color-text);
+    border: var(--color-text);
+}
+.btn-outline-primary{
+    color: var(--color-text);
+    border-color: var(--color-text);
+}
+.btn.more{
+    font-size: 14px;
+}
+.btn .fa-arrow-right{
+    right: 1em;
+    top: 50%;
+    color: #fff;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.bitcapoWarpt .dropdown-item:focus, 
+.bitcapoWarpt .dropdown-item:hover{
+    background: var(--color-secondary);
+}
+.bitcapoWarpt .custom-control-label::before,
+.bitcapoWarpt .custom-control-label::before{
+    border: solid 1px var(--color-text);
+    background-color: #2b2b2b;
+}
+.bitcapoWarpt .custom-radio .custom-control-input:checked~.custom-control-label::after{
+    background: var(--color-text);
+    border-radius: 50%;
+}
+.bitcapoWarpt .custom-checkbox .custom-control-input:checked~.custom-control-label::after{
+    background: var(--color-text);
+    border-radius: 0.25rem;
+}
+
 
 .topNav{
     font-size: 14px;
 }
-.topNav a{
-    color: var(--color-white);
+.topNav .dropdown .dropdown-menu{
 }
 .topNav .dropdown a{
-    color: var(--color-white);
     font-size: 14px;
     outline: 0!important;
     border: none;
@@ -51,63 +99,39 @@ a:active{
 
 header a{
     font-size: 16px;
-    color: var(--color-gay);
-    
 }
 header nav ul li.active a{
-    color: var(--color-black);
     font-weight: bold;
-    border-bottom: 5px solid var(--color-orange);
+    border-bottom: 5px solid var(--color-text);
 }
 
-.btn-primary{
-    background: var(--color-orange);
-    border: var(--color-orange);
-}
-.btn-outline-primary{
-    color: var(--color-orange);
-    border-color: var(--color-orange);
-}
-.btn.more{
-    font-size: 14px;
-    background: var(--color-bg-main);
-}
-.btn .fa-arrow-right{
-    right: 1em;
-    top: 50%;
-    color: #fff;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
 
 .cryptocurrency{
-    color: var(--color-white);
+    
 }
 .cryptocurrency h2{
     font-size: 33px;
-    color: #fff;
 }
 .cryptocurrency form input{
     background: transparent;
     border: none;
     border-radius: 0;
-    border-bottom: 3px  solid #fff;
+    border-bottom: 3px  solid var(--color-text);
 }
 .cryptocurrency form input::-webkit-input-placeholder {
-    color: #fff;
+    color: var(--color-text);
 }
 .cryptocurrency form input:-ms-input-placeholder {
-    color: #fff;
+    color: var(--color-text);
 }
 .cryptocurrency form input::placeholder {
-    color: #fff;
+    color: var(--color-text);
 }
 .cryptocurrency form label{
-    right: 1.5em;
+    right: 2em;
 }
 .cryptocurrency form input:focus + label .fa-search:before{
     content: "\f00d";
-    color: #000;
     font-size: 20px;
 }
 
@@ -126,10 +150,10 @@ header nav ul li.active a{
     font-size: 17px;
 }
 .coinItem .fa-level-up-alt{
-    color: green;
+    color: var(--color-up);
 }
 .coinItem .fa-level-down-alt{
-    color: red;
+    color: var(--color-down);
 }
 .coinItem figure img{
     width: 28px;
@@ -147,8 +171,7 @@ header nav ul li.active a{
 }
 
 .howCard{
-    color: var(--color-bg-main);
-    border: 1px solid var(--color-orange);
+    border: 1px solid var(--color-text);
     border-radius: 10px;
     width: 30%;
     margin:  1.665%;
@@ -159,13 +182,10 @@ header nav ul li.active a{
 .howCard h3{
     font-size: 20px;
 }
-.howCard span{
-    color: var(--color-gay);
-}
 .howCard a{
     left: 0;
     bottom: 2em;
-    color: var(--color-bg-main);
+    text-decoration: underline;
 }
 
 .why{
@@ -175,9 +195,6 @@ header nav ul li.active a{
     font-size: 18px;
     font-weight: normal;
 }
-.why .fa-check{
-    color: var(--color-check);
-}
 
 .rate h3{
     width: 75px;
@@ -185,34 +202,34 @@ header nav ul li.active a{
     line-height: 60px;
     font-size: 25px;
     font-weight: bold;
-    color: var(--color-bg-main);
-    border: 5px solid var(--color-orange);
+    border: 5px solid var(--color-text);
 }
-.rate i{
+
+.rate{
+    
+}
+.rate i.fa-star{
     color: #999;
 }
 .rate i.active{
-    color: var(--color-bg-main);
+    color: var(--color-text);
 }
 .rateTrue p{
     font-size: 24px;
     font-weight: bold;
-    color: #000;
 }
 .rateTrue p i {
     font-size: 28px;
-    color: #000;
 }
 
 .rateTermCard{
     padding: 0 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-text);
     font-size: 14px;
 }
 .rateTermCard h5{
     font-size: 14px;
     font-weight: bold;
-    color: var(--color-orange);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -225,16 +242,14 @@ header nav ul li.active a{
 
 .support h3{
     font-size: 18px;
-    color: var(--color-gay);
     font-weight: normal;
 }
 .support .fa-circle{
     color: var(--color-check);
 }
 .supportCard{
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-text);
     border-radius: 6px;
-    color: #000;
     width: 49%;
 }
 .supportCard span{
@@ -245,21 +260,17 @@ header nav ul li.active a{
     font-weight: bold;
 }
 .supportCard i{
-    color: var(--color-bg-main);
+    
 }
 
 .payment{
     
-}
-.payment a{
-    color: var(--color-bg-main);
 }
 
 
 .social a{
     font-size: 25px;
     font-weight: bold;
-    color: var(--color-bg-main);
 }
 .social a i{
     font-weight: normal;
@@ -277,30 +288,29 @@ header nav ul li.active a{
     height: 2px;
     display: block;
     position: absolute;
-    background: var(--color-bg-main);
+    background: var(--color-text);
     right: 5px;
     top: calc(50% - 14px);
     z-index: -1;
 }
 .progressbarItem{
-    color: var(--color-bg-main);
+    
 }
 .progressbarItem .rounded-circle{
     width: 60px;
     height: 60px;
     line-height: 60px;
     font-size: 24px;
-    background: #fff;
-    border: 2px solid var(--color-bg-main);
+    background: var(--color-primary);
+    border: 2px solid var(--color-text);
 }
 
 .progressbarItem .rounded-circle.active{
-    background: var(--color-bg-main);
+    background: var(--color-text);
     color: #fff;
 }
 .progressbarItem .rounded-circle.passed{
-    background: var(--color-check);
-    border-color: var(--color-check);
+    background: var(--color-text);
     color: #fff;
 }
 
@@ -310,12 +320,11 @@ header nav ul li.active a{
     font-size: 14px;
 }
 .reFrm-top{
-    color: var(--color-bg-main);
+    
 }
 .reFrm-title{
     font-size: 26px;
     font-weight: normal;
-    color: var(--color-bg-main);
 }
 .showPass{
     height: calc(1.5em + .75rem + 2px);
@@ -330,33 +339,36 @@ header nav ul li.active a{
 
 
 .verifyEmail{
-    border-color: var(--color-bg-main);
-    color: var(--color-bg-main);
+    background: var(--bg-primary) !important;
+    border-color: var(--color-text);
+    color: var(--color-text);
     width: inherit;
 }
 .verifyEmail + label{
     top:  6px;
     right: 0.5em;
-    color: var(--color-bg-main);
     cursor: pointer;
 }
+
+
 .authenCode{
     width: inherit;
 }
 
-.topFooter{
-    color: var(--color-gay);
+.security .custom-radio{
+    border: 1px solid var(--color-text);
 }
+
+
 .topFooter h2{
     font-size: 26px;
-}
-.topFooter a{
-    color: var(--color-gay);
 }
 .topFooter > div{
     width: 20%;
 }
-
+.topFooter .fa-circle{
+    color: var(--color-check)
+}
 
 
 

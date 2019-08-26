@@ -37,9 +37,9 @@
                 </div>
             </div>
         </div>
-        <header class="bg-light">
+        <header class="bg-secon">
             <nav class="container navbar navbar-expand-lg d-flex justify-content-between py-0"> 
-                <a class="navbar-brand" href="#">Bit Capo</a>
+                <a class="navbar-brand" href="#"><img src="image/-logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMain"> 
                     <span class="navbar-toggler-icon"><i class="fas fa-bars fa-lg mt-2"></i></span> 
                 </button>
@@ -76,63 +76,61 @@
         </header>
 
         <main role="main">
-            <div class="bg-light">
-                <div class="container">
-                    <div class="row py-2 py-md-5">
-                        <div class="register col-md-6 offset-md-3 px-3 px-md-0">
-                            <div class="progressbar position-relative d-flex justify-content-between mb-3 mb-md-4 mx-3">
-                                <div class="progressbarItem text-center">
-                                    <span class="rounded-circle d-inline-block passed"><i class="fas fa-check"></i></span>
-                                    <small class="d-block mt-2">Personal details</small>
-                                </div>
-                                <div class="progressbarItem text-center">
-                                    <span class="rounded-circle d-inline-block passed"><i class="fas fa-check"></i></span>
-                                    <small class="d-block mt-2">Verify email</small>
-                                </div>
-                                <div class="progressbarItem text-center">
-                                    <span class="rounded-circle d-inline-block passed"><i class="fas fa-check"></i></span>
-                                    <small class="d-block mt-2">Verify phone</small>
-                                </div>
-                                <div class="progressbarItem text-center">
-                                    <span class="rounded-circle d-inline-block active">4</span>
-                                    <small class="d-block mt-2">Security</small>
-                                </div>
-                                
+            <div class="container">
+                <div class="row py-2 py-md-5">
+                    <div class="register col-md-6 offset-md-3 px-3 px-md-0">
+                        <div class="progressbar position-relative d-flex justify-content-between mb-3 mb-md-4 mx-3">
+                            <div class="progressbarItem text-center">
+                                <span class="rounded-circle d-inline-block passed"><i class="fas fa-check"></i></span>
+                                <small class="d-block mt-2">Personal details</small>
                             </div>
-                            
-                            <form class="register-frm bg-white w-100 p-4 border rounded" action="">
-                                <div class="reFrm-top text-center mb-4">
-                                    <i class="fas fa-mobile-alt fa-3x mt-0 mb-2 mt-mb-4 mt-md-1"></i>
-                                    <h2 class="reFrm-title">Personal details</h2>
-                                    <p>Two Factor Authentication (2FA)</p>
-                                </div>
-                                
-                                <div class="">
-                                    <div class="custom-control custom-radio custom-control border rounded p-3 mb-2">
-                                        <input type="radio" id="smsAuthen" class="custom-control-input" name="customRadio">
-                                        <label class="custom-control-label" for="smsAuthen">
-                                            SMS <br>
-                                            <span class="text-black-50">Your account is protected by default with an SMS code as Two Factor Authentication (2FA). This code is required when logging in and confirming payments.</span>
-                                        </label>
-                                    </div>
+                            <div class="progressbarItem text-center">
+                                <span class="rounded-circle d-inline-block passed"><i class="fas fa-check"></i></span>
+                                <small class="d-block mt-2">Verify email</small>
+                            </div>
+                            <div class="progressbarItem text-center">
+                                <span class="rounded-circle d-inline-block passed"><i class="fas fa-check"></i></span>
+                                <small class="d-block mt-2">Verify phone</small>
+                            </div>
+                            <div class="progressbarItem text-center">
+                                <span class="rounded-circle d-inline-block active">4</span>
+                                <small class="d-block mt-2">Security</small>
+                            </div>
 
-                                    <div class="custom-control custom-radio custom-control border rounded p-3 mb-2">
-                                        <input type="radio" id="appAuthen" class="custom-control-input" name="customRadio">
-                                        <label class="custom-control-label" for="appAuthen">
-                                            Authenticator app <br>
-                                            <span class="text-black-50">Your can download an Authenticator app on your samrtphone or tablet. You will receive a code (the Two Factor Authentication) in this ap. This code is required when logging in and confirming payments.</span>
-                                        </label>
-                                    </div>
-                                </div>
-                                
-                                <button type="submit" class="btn btn-primary position-relative w-100 my-3">Next step <i class="fas fa-arrow-right position-absolute"></i></button>
-                            </form>
                         </div>
+
+                        <form class="register-frm bg-secon w-100 p-4 rounded" action="">
+                            <div class="reFrm-top text-center mb-4">
+                                <i class="fas fa-mobile-alt fa-3x mt-0 mb-2 mt-mb-4 mt-md-1"></i>
+                                <h2 class="reFrm-title">Personal details</h2>
+                                <p>Two Factor Authentication (2FA)</p>
+                            </div>
+
+                            <div class="security">
+                                <div class="custom-control custom-radio custom-control rounded p-3 mb-2">
+                                    <input type="radio" id="smsAuthen" class="custom-control-input" name="customRadio">
+                                    <label class="custom-control-label" for="smsAuthen">
+                                        SMS <br>
+                                        <span>Your account is protected by default with an SMS code as Two Factor Authentication (2FA). This code is required when logging in and confirming payments.</span>
+                                    </label>
+                                </div>
+
+                                <div class="custom-control custom-radio custom-control rounded p-3 mb-2">
+                                    <input type="radio" id="appAuthen" class="custom-control-input" name="customRadio">
+                                    <label class="custom-control-label" for="appAuthen">
+                                        Authenticator app <br>
+                                        <span>Your can download an Authenticator app on your samrtphone or tablet. You will receive a code (the Two Factor Authentication) in this ap. This code is required when logging in and confirming payments.</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary position-relative w-100 my-3">Next step <i class="fas fa-arrow-right position-absolute"></i></button>
+                        </form>
                     </div>
                 </div>
             </div>
             
-            <div class="bg-light px-3 px-md-0">
+            <div class="bg-secon px-3 px-md-0">
                 <div class="container">
                     <div class="row pt-4 pb-2">
                         <div class="social w-100 d-flex flex-wrap justify-content-between align-items-center mt-2">
@@ -142,10 +140,10 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
         </main>
-        <footer class="bg-light px-3 px-md-0">
+        
+        <footer class="bg-secon px-3 px-md-0">
             <div class="container">
                 <div class="row pb-5">
                     <div class="col-md-12">
@@ -154,7 +152,7 @@
                     <div class="topFooter w-100 d-flex flex-wrap justify-content-between mt-4">
                         <div>
                             <div class="footerLogo mb-3">
-                                Logo
+                                <img src="image/-logo.png" alt="">
                             </div>
                             <p>Tòa nhà tài chính Bitexco, 7, 2 Hải Triều, Bến Nghé, Quận 1, Hồ Chí Minh</p>
                             <p>Chamber of commerce: 63661438</p>
