@@ -122,11 +122,17 @@
 /* 480px 
 ----------------------------------------------------------*/
 @media only screen and (max-width: 480px) {
+    body{
+        font-size: 0.9rem;
+    }
     h2{
         font-size: 1.5rem;
     }
     h3{
         font-size: 1.2rem;
+    }
+    h4{
+        font-size: 1.1rem;
     }
     .w-50, .w-25{
         width: 100% !important;
