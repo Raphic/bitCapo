@@ -1,18 +1,11 @@
 :root{
-/*
-    --color-bg-main: #1ab394;
-    --color-black: #000;
-    --color-white: #fff;
-    --color-gay: #555;
-    --color-orange: #f8ac59;
-    --color-check :#7ed321;
-*/
     --color-primary : #2b2b2b;
     --color-secondary: #3c3c3c;
     --color-text: #f7931a;
     --color-check :#7ed321;
     --color-up: #07ff19;
     --color-down: #ff0707; 
+    --color-active: #007bff;
 }
 
 body{
@@ -59,6 +52,19 @@ a:active{
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+.btn-amount {
+    height: 35px;
+    line-height: 35px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.nav-pills .nav-item .nav-link{
+    border: 1px solid var(--color-text);
+}
+.nav-pills .nav-item .nav-link.active{
+    border-color: var(--color-active);
+}
 
 .bitcapoWarpt .dropdown-item:focus, 
 .bitcapoWarpt .dropdown-item:hover{
@@ -77,7 +83,15 @@ a:active{
     background: var(--color-text);
     border-radius: 0.25rem;
 }
-
+.border-2x{
+    border-width: 2px !important;
+}
+.border-secon{
+    border-color: var(--color-secondary) !important;
+}
+.border-primary{
+    border-color: var(--color-primary) !important;
+}
 
 .topNav{
     font-size: 14px;
@@ -314,9 +328,10 @@ header nav ul li.active a{
     color: #fff;
 }
 
-.register-frm,
-.register-frm input,
-.register-frm select{
+form,
+.exchange-frm .input-group-text,
+.form-group,
+.form-control{
     font-size: 14px;
 }
 .reFrm-top{
@@ -359,6 +374,17 @@ header nav ul li.active a{
     border: 1px solid var(--color-text);
 }
 
+.walletOfer img{
+    width: 20px;
+}
+
+#selectCoin option[value="Bitcoin"]{
+    background-image: url(../image/icon/btc.png) no-repeat center center;
+}
+
+.contactPage .fa-circle{
+    color: var(--color-check);
+}
 
 .topFooter h2{
     font-size: 26px;

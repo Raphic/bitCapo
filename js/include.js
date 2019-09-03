@@ -13,11 +13,10 @@ include('js/swiper.min.js');
 /* Boostap ========================================================*/
 include('js/bootstrap/popper.min.js');
 include('js/bootstrap/bootstrap.min.js');
+//include('js/bootstrap/bootstrap-select.min.js');
+//include('js/bootstrap/defaults-en_US.js');
 //include('js/bootstrap/bootstrap.bundle.min.js');
 /* Custom ========================================================*/
 include('js/script.js');
 //include(domain + '/js/jquery.mCustomScrollbar.js');
-//include('js/swiper.min.js');
-/* Boostap ========================================================*/
-//include('boostrap/bootstrap.min.js');
 
