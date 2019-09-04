@@ -14,7 +14,6 @@ include('js/swiper.min.js');
 include('js/bootstrap/popper.min.js');
 include('js/bootstrap/bootstrap.min.js');
 //include('js/bootstrap/bootstrap-select.min.js');
-//include('js/bootstrap/defaults-en_US.js');
 //include('js/bootstrap/bootstrap.bundle.min.js');
 /* Custom ========================================================*/
 include('js/script.js');
