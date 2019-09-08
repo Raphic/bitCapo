@@ -44,16 +44,17 @@
                     <span class="navbar-toggler-icon"><i class="fas fa-bars fa-lg mt-2"></i></span> 
                 </button>
                 <div class="collapse navbar-collapse" id="navMain">
-                    <ul class="navbar-nav mx-auto">
+                    <ul class="navbar-nav mr-auto ml-auto">
                         <li class="nav-item active"> 
-                            <a class="nav-link pt-md-4 pb-md-3 px-lg-3" href="/.">Home <span class="sr-only">(current)</span></a> 
+                            <a class="nav-link d-inline-block pt-md-4 pb-md-3 px-lg-3" href="#">Home <span class="sr-only">(current)</span></a> 
                         </li>
                         <li class="nav-item"> 
                             <a class="nav-link pt-md-4 pb-md-3 px-lg-3" href="#">My Account</a>
                         </li>
-                        <li class="nav-item"> 
-                            <a class="nav-link pt-md-4 pb-md-3 px-lg-3" href="buy.html">Buy</a>
+						<li class="nav-item"> 
+                            <a class="nav-link pt-md-4 pb-md-3 px-lg-3" href="#">Buy</a>
                         </li>
+                        
                         <li class="nav-item"> 
                             <a class="nav-link pt-md-4 pb-md-3 px-lg-3" href="#">Deposit</a>
                         </li>
@@ -64,7 +65,7 @@
                             <a class="nav-link pt-md-4 pb-md-3 px-lg-3" href="#">Product</a>
                         </li>
                         <li class="nav-item"> 
-                            <a class="nav-link pt-md-4 pb-md-3 px-lg-3" href="contact.html">Contact</a>
+                            <a class="nav-link pt-md-4 pb-md-3 px-lg-3" href="#">Contact</a>
                         </li>
                     </ul>
                     <div>
@@ -119,33 +120,51 @@
                                 <input type="text" class="form-control" id="eAddress" placeholder="Please enter your email address"> 
                             </div>
                             <div class="form-row">
-                                <label class="font-weight-bold form-group col-md-12 mb-2" for="password">Password</label>
-                                <div class="form-group col-10">
-                                    <input type="password" id="password" class="form-control" placeholder="Please enter your password"> 
+                                <label class="font-weight-bold form-group col-md-12 mb-2" for="">Date of birth</label>
+                                <div class="form-group col-md-4">
+                                    <input type="text"  id="day" class="form-control" placeholder="Day"> 
                                 </div>
-                                <div class="form-group col-2">
-                                    <button class="showPass w-100 text-center"><i class="fas fa-eye fa-lg"></i></button>
+                                <div class="form-group col-md-4">
+                                    <input type="text" id="month" class="form-control" placeholder="Month"> 
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <input type="text" id="year" class="form-control" placeholder="Year"> 
                                 </div>
                             </div>
                             <div class="form-row">
-                                <label class="font-weight-bold form-group col-md-12 mb-2" for="confirmpassword">Confirm password</label>
+                                <label class="font-weight-bold form-group col-md-12 mb-2" for="password">Password</label>
                                 <div class="form-group col-10">
-                                    <input type="password" id="confirmpassword" class="form-control" placeholder="Please enter your password"> 
+                                    <input type="text" id="password" class="form-control" placeholder="Please enter your password"> 
                                 </div>
                                 <div class="form-group col-2">
                                     <button class="showPass w-100 text-center"><i class="fas fa-eye fa-lg"></i></button>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold" for="selectNational">Nationality</label>
+                                <select class="form-control" id="selectNational">
+                                    <option>English</option>
+                                    <option>Deutsch</option>
+                                    <option>Spanish</option>
+                                    <option>German</option>
+                                    <option>Russia</option>
+                                    <option>Chinese</option>
+                                    <option>Portugese</option>
+                                </select>
+                            </div>
 
-                            <div class="form-group custom-control custom-checkbox mb-0 mt-2">
+                            <div class="form-group custom-control custom-checkbox ">
                                 <input type="checkbox" class="custom-control-input" id="reNoti">
                                 <label class="custom-control-label" for="reNoti">Receive useful tips and notifications.</label>
                             </div>
+                            <div class="form-group custom-control custom-checkbox mb-1">
+                                <input type="checkbox" class="custom-control-input" id="risksInvolved">
+                                <label class="custom-control-label" for="risksInvolved">I'm aware of the risks involved with cryptocurrency trading.</label>
+                            </div>
                             <div class="form-group custom-control custom-checkbox ">
                                 <input type="checkbox" class="custom-control-input" id="terms">
-                                <label class="custom-control-label" for="terms"><a href="#"><u>Terms and conditionsa</u></a> is mandatory to create an account</label>
+                                <label class="custom-control-label" for="terms">I agree to the <a href="#">Bit Capo terms and conditions.</a></label>
                             </div>
-                          
                             <button type="submit" class="btn btn-primary position-relative w-100 mb-3">Create my account <i class="fas fa-arrow-right position-absolute"></i></button>
                         </form>
                     </div>

@@ -44,16 +44,17 @@
                     <span class="navbar-toggler-icon"><i class="fas fa-bars fa-lg mt-2"></i></span> 
                 </button>
                 <div class="collapse navbar-collapse" id="navMain">
-                    <ul class="navbar-nav mx-auto">
+                    <ul class="navbar-nav mr-auto ml-auto">
                         <li class="nav-item active"> 
-                            <a class="nav-link pt-md-4 pb-md-3 px-lg-3" href="/.">Home <span class="sr-only">(current)</span></a> 
+                            <a class="nav-link d-inline-block pt-md-4 pb-md-3 px-lg-3" href="#">Home <span class="sr-only">(current)</span></a> 
                         </li>
                         <li class="nav-item"> 
                             <a class="nav-link pt-md-4 pb-md-3 px-lg-3" href="#">My Account</a>
                         </li>
-                        <li class="nav-item"> 
-                            <a class="nav-link pt-md-4 pb-md-3 px-lg-3" href="buy.html">Buy</a>
+						<li class="nav-item"> 
+                            <a class="nav-link pt-md-4 pb-md-3 px-lg-3" href="#">Buy</a>
                         </li>
+                        
                         <li class="nav-item"> 
                             <a class="nav-link pt-md-4 pb-md-3 px-lg-3" href="#">Deposit</a>
                         </li>
@@ -64,7 +65,7 @@
                             <a class="nav-link pt-md-4 pb-md-3 px-lg-3" href="#">Product</a>
                         </li>
                         <li class="nav-item"> 
-                            <a class="nav-link pt-md-4 pb-md-3 px-lg-3" href="contact.html">Contact</a>
+                            <a class="nav-link pt-md-4 pb-md-3 px-lg-3" href="#">Contact</a>
                         </li>
                     </ul>
                     <div>
@@ -81,11 +82,11 @@
                     <div class="register col-md-6 offset-md-3 px-3 px-md-0">
                         <div class="progressbar position-relative d-flex justify-content-between mb-3 mb-md-4 mx-3">
                             <div class="progressbarItem text-center">
-                                <span class="rounded-circle d-inline-block active">1</span>
+                                <span class="rounded-circle d-inline-block passed"><i class="fas fa-check"></i></span>
                                 <small class="d-block mt-2">Personal details</small>
                             </div>
                             <div class="progressbarItem text-center">
-                                <span class="rounded-circle d-inline-block">2</span>
+                                <span class="rounded-circle d-inline-block active">2</span>
                                 <small class="d-block mt-2">Verify email</small>
                             </div>
                             <div class="progressbarItem text-center">
@@ -101,52 +102,25 @@
 
                         <form class="register-frm bg-secon w-100 p-4 rounded" action="">
                             <div class="reFrm-top text-center mb-4">
-                                <i class="far fa-user fa-3x mt-0 mb-2 mt-mb-4 mt-md-1"></i>
-                                <h2 class="reFrm-title">Personal details</h2>
+                                <i class="far fa-paper-plane fa-3x mt-0 mb-2 mt-mb-4 mt-md-1"></i>
+                                <h2 class="reFrm-title">Verify email</h2>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label class="font-weight-bold" for="fNames">First name(s)</label>
-                                    <input type="text" class="form-control" id="fNames" placeholder="Please enter your first name(s)"> 
+                            <div class="text-center">
+                                <label class="d-block" for="verify">We have sent a authentication code to</label>
+                                <div class="d-inline-block form-group position-relative">
+                                    <input type="text" id="verify" class="verifyEmail form-control d-inline-block pr-4 bg-main" value="tndkhoa_1104@yahoo.com" disabled>
+                                    <label class="position-absolute"><i class="fas fa-pen"></i></label>
                                 </div>
-                                <div class="form-group col-md-6">
-                                    <label class="font-weight-bold" for="lNames">Last name</label>
-                                    <input type="password" class="form-control" id="lNames" placeholder="Please enter your last name"> 
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="font-weight-bold" for="eAddress">Email address</label>
-                                <input type="text" class="form-control" id="eAddress" placeholder="Please enter your email address"> 
-                            </div>
-                            <div class="form-row">
-                                <label class="font-weight-bold form-group col-md-12 mb-2" for="password">Password</label>
-                                <div class="form-group col-10">
-                                    <input type="password" id="password" class="form-control" placeholder="Please enter your password"> 
-                                </div>
-                                <div class="form-group col-2">
-                                    <button class="showPass w-100 text-center"><i class="fas fa-eye fa-lg"></i></button>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <label class="font-weight-bold form-group col-md-12 mb-2" for="confirmpassword">Confirm password</label>
-                                <div class="form-group col-10">
-                                    <input type="password" id="confirmpassword" class="form-control" placeholder="Please enter your password"> 
-                                </div>
-                                <div class="form-group col-2">
-                                    <button class="showPass w-100 text-center"><i class="fas fa-eye fa-lg"></i></button>
-                                </div>
+
                             </div>
 
-                            <div class="form-group custom-control custom-checkbox mb-0 mt-2">
-                                <input type="checkbox" class="custom-control-input" id="reNoti">
-                                <label class="custom-control-label" for="reNoti">Receive useful tips and notifications.</label>
+                            <div class="form-group text-center mt-2">
+                                <label for="authenticationCode">Enter you authentication code here</label>
+                                <input type="text" id="authenticationCode" class="authenCode form-control mx-auto text-center" placeholder="Authentication code"> 
                             </div>
-                            <div class="form-group custom-control custom-checkbox ">
-                                <input type="checkbox" class="custom-control-input" id="terms">
-                                <label class="custom-control-label" for="terms"><a href="#"><u>Terms and conditionsa</u></a> is mandatory to create an account</label>
-                            </div>
-                          
-                            <button type="submit" class="btn btn-primary position-relative w-100 mb-3">Create my account <i class="fas fa-arrow-right position-absolute"></i></button>
+
+                            <button type="submit" class="btn btn-primary position-relative w-100 my-3">Next step <i class="fas fa-arrow-right position-absolute"></i></button>
+                            <a href="#">Send me the authentication code again</a>
                         </form>
                     </div>
                 </div>
