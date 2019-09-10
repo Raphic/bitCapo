@@ -61,7 +61,11 @@
         border-radius: 4px;
         padding: 0.25rem 0.5rem !important;
         margin-bottom: 0.5rem;
-    }           
+    }  
+    
+    .iban{
+        text-align: center;;
+    }
 }
 /* 768px 
 ----------------------------------------------------------*/
@@ -118,6 +122,10 @@
     .progressbarItem .rounded-circle + small{
         display: none !important;
     } 
+    
+    .progessWrapt{
+        height: 24px;
+    }
 }
 /* 480px 
 ----------------------------------------------------------*/
@@ -172,5 +180,8 @@
     
     .topFooter > div{
         width: 100%;
+    }
+    .progessWrapt{
+        height: 12px;
     }
 }

@@ -31,8 +31,17 @@ a:active{
 .bg-secon{
     background: var(--color-secondary);
 }
+.bg-third{
+    background: var(--color-text);
+}
+.text-white{
+    color: #fff;
+}
 .text-orange{
     color: var(--color-text) !important; 
+}
+.font-100{
+    font-size: 1rem;
 }
 .btn-primary{
     background: var(--color-text);
@@ -86,11 +95,21 @@ a:active{
 .border-2x{
     border-width: 2px !important;
 }
+.border-5x{
+    border-width: 5px !important;
+}
 .border-secon{
     border-color: var(--color-secondary) !important;
 }
 .border-primary{
     border-color: var(--color-primary) !important;
+}
+.border-third{
+    border-color: var(--color-text) !important;
+}
+
+.table-secon thead th{
+    border-top: none;
 }
 
 .topNav{
@@ -163,10 +182,18 @@ header nav ul li.active a{
 .coinItem p{
     font-size: 17px;
 }
+/*
 .coinItem .fa-level-up-alt{
     color: var(--color-up);
 }
 .coinItem .fa-level-down-alt{
+    color: var(--color-down);
+}
+*/
+.fa-level-up-alt{
+    color: var(--color-up);
+}
+.fa-level-down-alt{
     color: var(--color-down);
 }
 .coinItem figure img{
@@ -376,6 +403,21 @@ form,
 
 .walletOfer img{
     width: 20px;
+}
+
+.progessWrapt{
+    height: 34px;
+}
+.progessPercent{
+    height: 100%;
+}
+
+.nav-v-secon a{
+    border-left: 3px solid;
+    border-color: var(--color-primary);
+}
+.nav-v-secon a.active{
+    border-color: var(--color-text);
 }
 
 #selectCoin option[value="Bitcoin"]{
