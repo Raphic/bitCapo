@@ -115,18 +115,18 @@ a:active{
 .topNav{
     font-size: 14px;
 }
-.topNav .dropdown .dropdown-menu{
+.dropdown .dropdown-menu{
 }
-.topNav .dropdown a{
+.dropdown a{
     font-size: 14px;
     outline: 0!important;
     border: none;
 }
-.topNav .dropdown a:hover{
+.dropdown a:hover{
     cursor: pointer;
     color: #fff;
 }
-.topNav .dropdown .dropdown-menu a{
+.dropdown .dropdown-menu a{
     color: var(--color-gay);
 }
 
@@ -380,7 +380,8 @@ form,
 }
 
 
-.verifyEmail{
+.verifyEmail,
+input:disabled{
     background: var(--bg-primary) !important;
     border-color: var(--color-text);
     color: var(--color-text);

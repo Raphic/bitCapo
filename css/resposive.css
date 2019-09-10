@@ -29,6 +29,46 @@
         padding-left: 1rem;
     }
     
+    #navMain ul + .logined .dropdown > a{
+        margin: 0rem;
+    }
+    
+    .logined{
+        padding: 1.5rem 0;
+        background: var(--color-primary);
+    }
+    .logined .dropdown-toggle{
+        padding: 0 1rem;
+    }
+    .logined .dropdown-toggle::after{
+        content: '';
+        display: none;
+    }
+    .logined .dropdown-menu{
+        position: relative;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-bottom: 1.5rem;
+        border: none;
+        padding: 1rem;
+    }
+    .logined .dropdown .dropdown-menu a{
+        border: 1px solid;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin: 0.5rem 0.3rem !important;
+        padding: 0.7rem;
+    }
+    .logined .dropdown .dropdown-menu a:last-child{
+        background: var(--color-text);
+        border-color: var(--color-text);
+        color: #fff;
+    }
     
     .coinItem{
         width: 24%;
@@ -79,6 +119,15 @@
     .supportCard{
         width: 100%;
     }
+    .acountPage form .form-group label.text-right{
+        text-align: left !important;
+    }
+    .nav-v-secon a{
+        border-left: none;
+    }
+    .nav-v-secon a.active{
+        border-bottom: 3px solid;
+    }
 }
 /* 576px 
 ----------------------------------------------------------*/
@@ -126,6 +175,8 @@
     .progessWrapt{
         height: 24px;
     }
+    
+    
 }
 /* 480px 
 ----------------------------------------------------------*/

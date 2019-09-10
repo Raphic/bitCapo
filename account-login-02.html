@@ -67,9 +67,24 @@
                             <a class="nav-link pt-md-4 pb-md-3 px-lg-3" href="contact.html">Contact</a>
                         </li>
                     </ul>
-                    <div class="my-4 my-md-0">
-                        <a class="mr-md-3" href="#">Sign in</a>
-                        <button class="btn btn-outline-primary" type="submit">Register</button>
+                    <div class="logined">
+                        <div class="dropdown text-left">
+                            <a class="dropdown-toggle py-0" id="profileMenu" data-toggle="dropdown">
+                                <i class="far fa-user fa-lg mr-2"></i>
+                                <span>Zet</span>
+                            </a>
+                            <div class="dropdown-menu bg-main text-orange" aria-labelledby="profileMenu"> 
+                                <a class="dropdown-item" href="#">My account</a> 
+                                <a class="dropdown-item" href="#">2FA</a> 
+                                <a class="dropdown-item" href="#">Tips and upgrade</a> 
+                                <a class="dropdown-item" href="#">My order history</a> 
+                                <a class="dropdown-item" href="#">My price arlets</a> 
+                                <a class="dropdown-item" href="#">Affiliate program</a> 
+                                <a class="dropdown-item" href="#">Verified payment</a> 
+                                <hr>
+                                <a class="dropdown-item" href="#">Log out</a> 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -176,8 +191,8 @@
             <div class="bg-secon">
                 <div class="container">
                     <div class="row">
-                        <div class="acountPage w-100 d-flex flex-wrap pt-4 pb-2">
-                            <div class="nav nav-v-secon flex-column col-md-3" role="tablist" aria-orientation="vertical">
+                        <div class="acountPage w-100 d-flex flex-wrap pt-4 pb-2 mb-4">
+                            <div class="nav nav-v-secon flex-md-column col-md-3" role="tablist" aria-orientation="vertical">
                                 <a class="nav-link" data-toggle="pill" href="#v-tips-tab" role="tab" aria-controls="v-pills-home" aria-selected="true">Tips and updates</a>
                                 <a class="nav-link active" data-toggle="pill" href="#v-myAccount-tab" role="tab" aria-controls="v-myAccount-tab" aria-selected="false">My Account</a>
                                 <a class="nav-link" data-toggle="pill" href="#v-2FA-tab" role="tab" aria-controls="v-2FA-tab" aria-selected="false">2FA</a>
@@ -185,28 +200,88 @@
                             </div>
 
                             <div class="tab-content col-md-9">
-                                <div class="tab-pane fade" id="v-tips-tab" role="tabpanel" aria-labelledby="v-tips-tab-tab">1...</div>
-                                <div class="tab-pane fade  show active" id="v-myAccount-tab" role="tabpanel" aria-labelledby="v-myAccount-tab">
-                                    <h4 class="d-inline-block font-weight-light mt-3 pb-2 border-bottom border-2x border-primary">My Account</h4>
-                                    <h5 class="font-weight-light ml-3 mt-4">Account information</h5>
-                                    <form>
-                                        <div class="form-group row">
-                                            <label for="staticName" class="col-sm-2 col-form-label">Name</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" disabled class="form-control" id="staticName" value="email@example.com"> 
-                                            </div>
+                                <div class="tab-pane fade" id="v-tips-tab" role="tabpanel" aria-labelledby="v-tips-tab-tab">
+                                    <h4 class="d-inline-block font-weight-light mt-3 pb-2 border-bottom border-2x border-primary">Tips and updates</h4>
+                                    <div class="border border-third p-4 mt-3">
+                                        <div class="form-group custom-control custom-checkbox mb-0 mt-2">
+                                            <input type="checkbox" class="custom-control-input" id="tipUpgrade">
+                                            <label class="custom-control-label font-weight-blod" for="tipUpgrade">Tips and updates</label>
+                                            <p><small>Do you want to be the frist to know about the latest news? We can keep you information for free. Receive our emails with tips and upgrades. This way you will never be faced with unwanted.</small></p>
                                         </div>
-                                        <div class="form-group row">
-                                            <label for="staticPhone" class="col-sm-2 col-form-label">Phone number</label>
-                                            <div class="col-sm-10">
-                                                <input type="tel" disabled class="form-control" id="staticPhone" placeholder="039 886 8808" value="039 886 8808">
-                                            </div>
+                                        <div class="text-right">
+                                            <button class="btn btn-primary w-25 more mt-2" type="button">Save</button>
                                         </div>
-                                    </form>
-                                    
+                                    </div>
                                 </div>
-                                <div class="tab-pane fade" id="v-2FA-tab" role="tabpanel" aria-labelledby="v-2FA-tab-tab">3...</div>
-                                <div class="tab-pane fade" id="v-linkAcc-tab" role="tabpanel" aria-labelledby="v-linkAcc-tab-tab">4...</div>
+                                
+                                <div class="tab-pane fade show active" id="v-myAccount-tab" role="tabpanel" aria-labelledby="v-myAccount-tab">
+                                    <h4 class="d-inline-block font-weight-light mt-3 pb-2 border-bottom border-2x border-primary">My Account</h4>
+                                    <div class="border border-third p-4 mt-3">
+                                        <h5 class="font-weight-light">Account information</h5>
+                                        <form class="mt-4 mb-5">
+                                            <div class="form-group row">
+                                                <label for="staticName" class="col-md-4 col-form-label text-right">Name</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" disabled class="form-control" id="staticName" value="email@example.com">
+                                                    <small>You can not change the name you registered you account with</small> 
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="staticPhone" class="col-md-4 col-form-label text-right">Phone number</label>
+                                                <div class="col-md-8">
+                                                    <input type="tel" disabled class="form-control" id="staticPhone" placeholder="039 886 8808" value="039 886 8808">
+                                                    <small>Forthemore, you phone number can no longer be changed because you are already tier 1 verified. </small>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <hr>
+                                        
+                                        <h5 class="font-weight-light mb-0 mt-4">My email address</h5>
+                                        <div class="col-sm-12 col-md-6 px-0 mb-4">
+                                            <button class="btn btn-primary w-100 more mt-2" type="button">Change your email address</button>
+                                        </div>
+                                        <hr>
+                                        
+                                        <h5 class="font-weight-light mb-0 mt-4">Password reset</h5>
+                                        <form class="my-4">
+                                            <div class="form-group row">
+                                                <label for="newPassword" class="col-md-4 col-form-label text-right">New password</label>
+                                                <div class="col-md-8">
+                                                    <input type="password" class="form-control" id="newPassword" value="">
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="cfrNewpass" class="col-md-4 col-form-label text-right">Confrim new password</label>
+                                                <div class="col-md-8">
+                                                    <input type="password" class="form-control" id="cfrNewpass" placeholder="" value="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="curPass" class="col-md-4 col-form-label text-right">Current password</label>
+                                                <div class="col-md-8">
+                                                    <input type="password" class="form-control" id="curPass" placeholder="" value="">
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="text-right">
+                                            <button class="btn btn-primary w-25 more mt-2" type="button">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-2FA-tab" role="tabpanel" aria-labelledby="v-2FA-tab-tab">
+                                    <h4 class="d-inline-block font-weight-light mt-3 pb-2 border-bottom border-2x border-primary">2FA</h4>
+                                    <div class="border border-third p-4 mt-3">
+                                        Content for 2FA
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-linkAcc-tab" role="tabpanel" aria-labelledby="v-linkAcc-tab-tab">
+                                    <h4 class="d-inline-block font-weight-light mt-3 pb-2 border-bottom border-2x border-primary">Linked Accounts</h4>
+                                    <div class="border border-third p-4 mt-3">
+                                        Content for Linked Accounts
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
