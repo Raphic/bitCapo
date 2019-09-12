@@ -1,0 +1,238 @@
+/* 1200px 
+----------------------------------------------------------*/
+@media only screen and (max-width: 1200px) {
+    .coinItem{
+        width: 19%;
+        margin: 0.5%;
+    }
+}
+/* 992px 
+----------------------------------------------------------*/
+@media only screen and (max-width: 992px) {
+    #navMain ul + div{
+        text-align: center;
+    }
+    #navMain ul + div a{
+        display: block;
+        margin: 3rem  auto 1rem;
+    }
+    #navMain ul + div button{
+        width: 90%;
+        display: block;
+        margin: 1rem auto;
+    }
+    #navMain ul li:not(.active) a{
+        border-bottom: 1px solid #ccc;
+    }
+    #navMain ul li  a{
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+    
+    #navMain ul + .logined .dropdown > a{
+        margin: 0rem;
+    }
+    
+    .logined{
+        padding: 1.5rem 0;
+        background: var(--color-primary);
+    }
+    .logined .dropdown-toggle{
+        padding: 0 1rem;
+    }
+    .logined .dropdown-toggle::after{
+        content: '';
+        display: none;
+    }
+    .logined .dropdown-menu{
+        position: relative;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-bottom: 1.5rem;
+        border: none;
+        padding: 1rem;
+    }
+    .logined .dropdown .dropdown-menu a{
+        border: 1px solid;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin: 0.5rem 0.3rem !important;
+        padding: 0.7rem;
+    }
+    .logined .dropdown .dropdown-menu a:last-child{
+        background: var(--color-text);
+        border-color: var(--color-text);
+        color: #fff;
+    }
+    
+    .coinItem{
+        width: 24%;
+        margin: 0.5%;
+    }
+    .ceateAccount .btn{
+        width: 45%;
+    }
+    .howCard{
+        width: 48%;
+        margin: 1%;
+    }
+    .howCard:nth-child(2){
+        width: 100%;
+    }
+    .w-25{
+        width: 50% !important;
+    }
+    .supportCard p{
+        font-size: 20px;
+    }
+    .topFooter > div{
+        width: 40%;
+    }
+    .topFooter > div:last-child li{
+        display: inline-block;
+    }
+    .topFooter > div:last-child li a{
+        border: 1px solid var(--color-text);
+        border-radius: 4px;
+        padding: 0.25rem 0.5rem !important;
+        margin-bottom: 0.5rem;
+    }  
+    
+    .iban{
+        text-align: center;;
+    }
+}
+/* 768px 
+----------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+    .w-50{
+        width: 75% !important;
+    }
+    .coinItem{
+        width: 32.33%;
+    }
+    .supportCard{
+        width: 100%;
+    }
+    .acountPage form .form-group label.text-right{
+        text-align: left !important;
+    }
+    .nav-v-secon a{
+        border-left: none;
+    }
+    .nav-v-secon a.active{
+        border-bottom: 3px solid;
+    }
+}
+/* 576px 
+----------------------------------------------------------*/
+@media only screen and (max-width: 576px) {
+    h2{
+        font-size: 1.75rem;
+    }
+    .cryptocurrency h2{
+        font-size: 24px;
+    }
+    .howCard{
+        width: 100%;
+    }
+    .howCard p{
+        margin: 0  0 -15px  0;
+    }
+    .howCard .fa-10x{
+        font-size: 5rem;
+    }
+    .howCard a{
+        bottom: 0.75em;
+    }
+    
+    .rateStar i{
+        font-size: 3rem;
+    }
+    
+    .progressbarItem .rounded-circle{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+    }
+    .progressbar:after{
+        width: 81%;
+        right: 7%;
+    }
+    .progressbarItem .rounded-circle.active + small{
+        display: block !important;
+    }
+    .progressbarItem .rounded-circle + small{
+        display: none !important;
+    } 
+    
+    .progessWrapt{
+        height: 24px;
+    }
+    
+    
+}
+/* 480px 
+----------------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+    body{
+        font-size: 0.9rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    h4{
+        font-size: 1.1rem;
+    }
+    .w-50, .w-25{
+        width: 100% !important;
+    }
+    .cryptocurrency h2{
+        display: none;
+    }
+    .cryptocurrency form input{
+        font-size: 14px;
+        text-align: left !important;
+    }
+    .cryptocurrency form label{
+        right: 1.5em;
+    }
+    .coinItem{
+        width: 49%;
+    }
+    
+    .ceateAccount .btn{
+        width: 100%;
+    }
+    
+    .rateStar i{
+        font-size: 2rem;
+    }
+    
+    .support h3{
+        font-size: 16px;
+    }
+    .supportCard p{
+        font-size: 18px;
+    }
+    
+    .social a{
+        font-size: 1rem;
+    }
+    
+    .topFooter > div{
+        width: 100%;
+    }
+    .progessWrapt{
+        height: 12px;
+    }
+}

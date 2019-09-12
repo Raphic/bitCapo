@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700&display=swap&subset=latin-ext');
+
+/*================== Import style ==================*/
+@import "../css/bootstrap/bootstrap.min.css";
+/*@import "../css/bootstrap/bootstrap-select.min.css";*/
+/*@import "../css/bootstrap/bootstrap-grid.min.css";*/
+@import "../css/swiper.min.css";
+
+@import "../css/main.css";
+@import "../css/resposive.css";
