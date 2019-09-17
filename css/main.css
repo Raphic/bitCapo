@@ -75,6 +75,49 @@ a:active{
     border-color: var(--color-active);
 }
 
+/*----- Custom dataTables ------------*/
+.data.table{
+    white-space: nowrap;
+}
+.dataTables_wrapper .dataTables_length, 
+.dataTables_wrapper .dataTables_filter, 
+.dataTables_wrapper .dataTables_info, 
+.dataTables_wrapper .dataTables_processing, 
+.dataTables_wrapper .dataTables_paginate{
+    color: var(--color-text);
+    font-size: 0.9rem;
+}
+table.dataTable tbody tr{
+    background: transparent;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active{
+    color: var(--color-text) !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+    color: var(--color-text) !important;
+    border-color: var(--color-text);
+    background: transparent;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+    font-size: 0.9rem;
+    padding: 0.1rem 0.7rem;
+}
+/*----- End Custom dataTables ------------*/
+
+.table td, 
+.table th,
+.table thead th{
+    border-color: var(--color-text);
+}
+.table-hover tbody tr:hover{
+    color: var(--color-text);
+}
+
+
+
 .bitcapoWarpt .dropdown-item:focus, 
 .bitcapoWarpt .dropdown-item:hover{
     background: var(--color-secondary);
@@ -106,6 +149,10 @@ a:active{
 }
 .border-third{
     border-color: var(--color-text) !important;
+}
+.border-dashed{
+    border-width: 1px;
+    border-style: dashed;
 }
 
 .table-secon thead th{

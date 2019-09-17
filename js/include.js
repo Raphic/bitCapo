@@ -13,7 +13,7 @@ include('js/swiper.min.js');
 /* Boostap ========================================================*/
 include('js/bootstrap/popper.min.js');
 include('js/bootstrap/bootstrap.min.js');
-//include('js/bootstrap/bootstrap-select.min.js');
+include('js/datatables/jquery.dataTables.min.js');
 //include('js/bootstrap/bootstrap.bundle.min.js');
 /* Custom ========================================================*/
 include('js/script.js');

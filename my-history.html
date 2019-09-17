@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Bit Capo | About</title>
+    <title>Bit Capo | Order History</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     
     <!-- Custom CSS -->
@@ -67,14 +67,29 @@
                             <a class="nav-link pt-md-4 pb-md-3 px-lg-3" href="contact.html">Contact</a>
                         </li>
                     </ul>
-                    <div class="my-4 my-md-0">
-                        <a class="mr-md-3" href="#">Sign in</a>
-                        <button class="btn btn-outline-primary" type="submit">Register</button>
+                    <div class="logined">
+                        <div class="dropdown text-left">
+                            <a class="dropdown-toggle py-0" id="profileMenu" data-toggle="dropdown">
+                                <i class="far fa-user fa-lg mr-2"></i>
+                                <span>Zet</span>
+                            </a>
+                            <div class="dropdown-menu bg-main text-orange" aria-labelledby="profileMenu"> 
+                                <a class="dropdown-item" href="#">My account</a> 
+                                <a class="dropdown-item" href="#">2FA</a> 
+                                <a class="dropdown-item" href="#">Tips and upgrade</a> 
+                                <a class="dropdown-item" href="#">My order history</a> 
+                                <a class="dropdown-item" href="#">My price arlets</a> 
+                                <a class="dropdown-item" href="#">Affiliate program</a> 
+                                <a class="dropdown-item" href="#">Verified payment</a> 
+                                <hr>
+                                <a class="dropdown-item" href="#">Log out</a> 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
         </header>
-
+        
         <main role="main">
             <div class="container">
                 <div class="row pb-2 pb-md-4">
@@ -175,123 +190,87 @@
             
             <div class="bg-secon">
                 <div class="container">
-                    <div class="row py-2 py-md-5">
-                        <div class="aboutPage d-md-flex flex-wrap">
-                            <h2 class="d-block col-12 my-3"><i>About BitCapo exchange</i></h2>
-                            <div class="col-md-7 text-justify">
-                                <p class="mb-2">BitCapo was created to provide a simplified gateway to the cryptocurrency sector, this is done through sharing knowledge to their users and by providing several ways to acquire and store them.</p>
-                                <p class="mb-2">On top of that BitCapo exchange is fully licensed according to the mandatory region regulations regarding cryptocurrency, privacy and security.  Currently providing service in: Europe.</p>
-                                <p>The BitCapo exchange is happy to invest time and attention into their users, this is why they’re available for contact 24/7.</p>
+                    <div class="row">
+                        <div class="myHistory w-100 d-flex flex-wrap pt-4 pb-2 mb-4">
+                            <div class="flex-md-column d-flex col-lg-4 col-xl-3 mb-3" role="tablist" aria-orientation="vertical">
+                                <ul class="col-6 m-0 p-0">
+                                    <h5 class="d-inline-block font-weight-light mt-3 pb-2">Type</h5>
+                                    <li class="form-group custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="hisBought">
+                                        <label class="custom-control-label" for="hisBought">Bought</label>
+                                    </li>
+                                    <li class="form-group custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="hisSold">
+                                        <label class="custom-control-label" for="hisSold">Sold</label>
+                                    </li>
+                                </ul>
+                                
+                                <ul class="col-6 m-0 p-0">
+                                    <h5 class="d-inline-block font-weight-light mt-3 pb-2">Order status</h5>
+                                    <li class="form-group custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="hisCompleted">
+                                        <label class="custom-control-label" for="hisCompleted">Completed</label>
+                                    </li>
+                                    <li class="form-group custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="hisProcessing">
+                                        <label class="custom-control-label" for="hisProcessing">Processing</label>
+                                    </li>
+                                    <li class="form-group custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="hisCancelled">
+                                        <label class="custom-control-label" for="hisCancelled">Cancelled</label>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="col-md-5 pb-md-0 pb-5">
-                                <img class="img-fluid" src="image/bitcapo-logo3.png" alt="">
+
+                            <div class="col-lg-8 col-xl-9">
+                                <h4 class="d-inline-block font-weight-light mt-3 pb-2 border-bottom border-2x border-primary">My order history</h4>
+                                
+                                <div class="table-responsive text-orange">
+                                    <table id="hisOrderTable" class="data table table-sm table-hover table-secon text-orange border border-third" style="100%">
+                                        <thead>
+                                           <tr>
+                                                <th>ID</th>
+                                                <th>Date</th>
+                                                <th>Amount</th>
+                                                <th>Price</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>1123</td>
+                                                <td>10-09-2019</td>
+                                                <td>20.01</td>
+                                                <td>10.6599</td>
+                                                <td>Sold</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2212</td>
+                                                <td>10-09-2019</td>
+                                                <td>20.01</td>
+                                                <td>10.6599</td>
+                                                <td>Bought</td>
+                                            </tr> 
+                                            <tr>
+                                                <td>5432</td>
+                                                <td>10-09-2019</td>
+                                                <td>20.01</td>
+                                                <td>10.6599</td>
+                                                <td>Cancelled</td>
+                                            </tr> 
+                                        </tbody>    
+                                    </table>
+                                </div>
+                                
                             </div>
-                        </div>
-                        
-                        <div class="ceateAccount col-md-12 text-center py-4 py-md-5">
-                            <button type="button" class="btn btn-primary mx-md-2 my-2 my-md-0 font-weight-bold">Create account</button>
-                            <button type="button" class="btn btn-outline-primary mx-md-2 my-2 my-md-0 font-weight-bold">3. What is a wallet?</button>
                         </div>
                     </div>
                 </div>
             </div>
             
             
-            <div class="px-3 px-md-0">
-                <div class="container">
-                    <div class="row py-2 py-md-5">
-                        <div class="howDocreate w-100 mt-4 px-3 px-md-0 d-flex flex-wrap">
-                            <h2 class="d-block col-12 mb-3"><i>How do I buy cryptocurrency ?</i></h2>
-                            <p class="mb-0 d-block col-12">See reference image above :</p>
-                            <div class="howCard position-relative px-3 pt-3 pb-4 pb-md-5">
-                                <p class="text-left">1. Deposit Money</p>
-                                <span class="d-block my-4">Deposit EUR or GBP to credit your account</span>
-                            </div>
-                            <div class="howCard position-relative px-3 pt-3 pb-4 pb-md-5">
-                                <p class="text-left">2. Await confirmation of deposit</p>
-                                <span class="d-block my-4">Wait for your account to be accredited.</span>
-                            </div>
-                            <div class="howCard position-relative px-3 pt-3 pb-4 pb-md-5">
-                                <p class="text-left">3. Credit</p>
-                                <span class="d-block my-4">Use your credit for action or withdrawal on BitCapo.</span>
-                            </div>
-                        </div>
-                        
-                        <div class="accountbank w-100 mt-4 px-3 px-md-0 d-flex flex-wrap">
-                            <h2 class="d-block col-12 mb-3"><i>Link bank account</i></h2>
-                            <div class="howCard col-md-5 px-3 pt-2 pb-2">
-                                <span class="d-block my-4">With the first purchase, we are required by Dutch law to verify your IBAN. With this transaction, you confirm that you are the owner of the specified bank account. This can be done by transferring €0.01 to us. When you place an order and pay with a new bank account, we immediately offer the possibility to link the bank account so that the order can be completed as quickly as possible. Did you pay with SEPA*? Then your IBAN verification can take up to three business days.</span>
-                            </div>
-                            <div class="howCard bg-secon col-md-6 px-3 pt-2 pb-2">
-                                <span class="d-block my-4"><small>*Please note: SEPA transactions (bank transfer) will be received within a maximum of three business days on our bank account. Are you buying cryptocurrencies with a SEPA transfer? Then the cryptocurrencies are only purchased when we have received the money from your order. In this case, we recommend that you first purchase BitCapo credits in order to make direct purchases on our platform.</small></span>
-                                <span class="d-block my-4"><small>With the other payment methods, your order is valid for a short time. When the order is completed within this time, the order will be sent to your wallet. When the order is completed too late, the order will be purchased again for the current price. After completing the order, it can be followed in the BitCapo wallet.</small></span>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-12">
-                            <hr>
-                        </div>
-                        
-                        <div class="ceateAccount col-md-12 text-center pb-4">
-                            <h2 class="d-block col-12 mt-3 mb-4 pb-md-3"><i>Do you also want to trade cryptocurrency easily and securely?</i></h2>
-                            <button type="button" class="btn btn-primary mx-md-2 my-2 my-md-0 font-weight-bold">Create account</button>
-                            <button type="button" class="btn btn-outline-primary mx-md-2 my-2 my-md-0 font-weight-bold">3. What is a wallet?</button>
-                        </div>
-                        
-                        <div class="col-md-12">
-                            <hr>
-                        </div>
-                        
-                        <div class="support w-100 text-center pt-4 pb-3">
-                                <h2 class="d-block col-12 my-3"><i>Support</i></h2>
-                                <h3><i class="fas fa-circle mr-2"></i> Available between: 09:00 - 21:00.</h3>
-                                <div class="d-flex flex-wrap justify-content-between text-left">
-                                    <a href="#" class="supportCard d-flex flex-wrap justify-content-between align-items-center bg-main px-3 py-3 mt-2 mb-1 mt-md-3 mb-md-2">
-                                        <div>
-                                            <span>EMAIL US</span>
-                                            <p class="my-0">emai@email.com</p>
-                                        </div>
-                                        <div>
-                                            <i class="fas fa-phone fa-2x mr-3"></i>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="supportCard d-flex flex-wrap justify-content-between align-items-center bg-main px-3 py-3 mt-2 mb-1 mt-md-3 mb-md-2">
-                                        <div>
-                                            <span>FACEBOOK</span>
-                                            <p class="my-0">Ask your question on</p>
-                                        </div>
-                                        <div>
-                                            <i class="fab fa-facebook-square fa-2x mr-3"></i>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="supportCard d-flex flex-wrap justify-content-between align-items-center bg-main px-3 py-3 mt-2 mb-1 mt-md-3 mb-md-2">
-                                        <div>
-                                            <span>CONTACT FORMS</span>
-                                            <p class="my-0">Chat or contact form</p>
-                                        </div>
-                                        <div>
-                                            <i class="fas fa-mail-bulk fa-2x mr-3"></i>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="supportCard d-flex flex-wrap justify-content-between align-items-center bg-main px-3 py-3 mt-2 mb-1 mt-md-3 mb-md-2">
-                                        <div>
-                                            <span>FAQs</span>
-                                            <p class="my-0">Frequently asked questions</p>
-                                        </div>
-                                        <div>
-                                            <i class="fas fa-comments fa-2x mr-3"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-md-12 text-center mt-5">
-                                    <button class="btn btn-primary w-25 more position-relative mt-2" type="button">Supportpage <i class="fas fa-arrow-right position-absolute"></i></button>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="bg-secon px-3 px-md-0">
+            <div class="bg-main px-3 px-md-0 pb-4">
                 <div class="container">
                     <div class="row pt-4 pb-2">
                         <div class="social w-100 d-flex flex-wrap justify-content-between align-items-center mt-2">
