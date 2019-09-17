@@ -35,6 +35,20 @@ $(document).ready(function () {
         "bFilter": true,
         searching: false
     });
+    
+    $('#portfolioBuy').DataTable({
+        "bLengthChange": false,
+        "bFilter": true,
+        searching: false,
+        "info": false
+    });
+    $('#portfolioSell').DataTable({
+        "bLengthChange": false,
+        "bFilter": true,
+        searching: false,
+        "info": false
+    });
+    
 });
 
 
