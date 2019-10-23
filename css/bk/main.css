@@ -1,0 +1,498 @@
+:root{
+    --color-primary : #2b2b2b;
+    --color-secondary: #3c3c3c;
+    --color-text: #f7931a;
+    --color-check :#7ed321;
+    --color-up: #07ff19;
+    --color-down: #ff0707; 
+    --color-active: #007bff;
+}
+
+body{
+    font-family: helvetica neue,Helvetica,Arial,sans-serif;
+    background: var(--color-primary);
+    color: var(--color-text);
+}
+h2,h3,h4,h5{
+    font-family: open sans,Arial,sans-serif;
+    
+}
+a{
+    color: var(--color-text);
+}
+a:hover,
+a:active{
+    color: var(--color-text);
+}
+
+.bg-main{
+    background: var(--color-primary);
+}
+.bg-secon{
+    background: var(--color-secondary);
+}
+.bg-third{
+    background: var(--color-text);
+}
+.text-white{
+    color: #fff;
+}
+.text-orange{
+    color: var(--color-text) !important; 
+}
+.font-100{
+    font-size: 1rem;
+}
+.btn-primary{
+    background: var(--color-text);
+    border: var(--color-text);
+}
+.btn-outline-primary{
+    color: var(--color-text);
+    border-color: var(--color-text);
+}
+.btn.more{
+    font-size: 14px;
+}
+.btn .fa-arrow-right{
+    right: 1em;
+    top: 50%;
+    color: #fff;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.btn-amount {
+    height: 35px;
+    line-height: 35px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.nav-pills .nav-item .nav-link{
+    border: 1px solid var(--color-text);
+}
+.nav-pills .nav-item .nav-link.active{
+    border-color: var(--color-active);
+}
+
+/*----- Custom dataTables ------------*/
+.data.table{
+    white-space: nowrap;
+}
+.dataTables_wrapper .dataTables_length, 
+.dataTables_wrapper .dataTables_filter, 
+.dataTables_wrapper .dataTables_info, 
+.dataTables_wrapper .dataTables_processing, 
+.dataTables_wrapper .dataTables_paginate{
+    color: var(--color-text);
+    font-size: 0.9rem;
+}
+table.dataTable tbody tr{
+    background: transparent;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active{
+    color: var(--color-text) !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+    color: var(--color-text) !important;
+    border-color: var(--color-text);
+    background: transparent;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+    font-size: 0.9rem;
+    padding: 0.1rem 0.7rem;
+}
+/*----- End Custom dataTables ------------*/
+
+.table td, 
+.table th,
+.table thead th{
+    border-color: var(--color-text);
+}
+.table-hover tbody tr:hover{
+    color: var(--color-text);
+}
+
+
+
+.bitcapoWarpt .dropdown-item:focus, 
+.bitcapoWarpt .dropdown-item:hover{
+    background: var(--color-secondary);
+}
+.bitcapoWarpt .custom-control-label::before,
+.bitcapoWarpt .custom-control-label::before{
+    border: solid 1px var(--color-text);
+    background-color: #2b2b2b;
+}
+.bitcapoWarpt .custom-radio .custom-control-input:checked~.custom-control-label::after{
+    background: var(--color-text);
+    border-radius: 50%;
+}
+.bitcapoWarpt .custom-checkbox .custom-control-input:checked~.custom-control-label::after{
+    background: var(--color-text);
+    border-radius: 0.25rem;
+}
+.border-2x{
+    border-width: 2px !important;
+}
+.border-5x{
+    border-width: 5px !important;
+}
+.border-secon{
+    border-color: var(--color-secondary) !important;
+}
+.border-primary{
+    border-color: var(--color-primary) !important;
+}
+.border-third{
+    border-color: var(--color-text) !important;
+}
+.border-dashed{
+    border-width: 1px;
+    border-style: dashed;
+}
+
+.table-secon thead th{
+    border-top: none;
+}
+
+.topNav{
+    font-size: 14px;
+}
+.dropdown .dropdown-menu{
+}
+.dropdown a{
+    font-size: 14px;
+    outline: 0!important;
+    border: none;
+}
+.dropdown a:hover{
+    cursor: pointer;
+    color: #fff;
+}
+.dropdown .dropdown-menu a{
+    color: var(--color-gay);
+}
+
+header a{
+    font-size: 16px;
+}
+header nav ul li.active a{
+    font-weight: bold;
+    border-bottom: 5px solid var(--color-text);
+}
+
+
+.cryptocurrency{
+    
+}
+.cryptocurrency h2{
+    font-size: 33px;
+}
+.cryptocurrency form input{
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 3px  solid var(--color-text);
+}
+.cryptocurrency form input::-webkit-input-placeholder {
+    color: var(--color-text);
+}
+.cryptocurrency form input:-ms-input-placeholder {
+    color: var(--color-text);
+}
+.cryptocurrency form input::placeholder {
+    color: var(--color-text);
+}
+.cryptocurrency form label{
+    right: 2em;
+}
+.cryptocurrency form input:focus + label .fa-search:before{
+    content: "\f00d";
+    font-size: 20px;
+}
+
+.coinContent{
+    
+}
+.coinItem{
+    width: 13%;
+    margin: 0 0.614%;
+}
+.coinItem h4{
+    font-size: 14px;
+    font-weight: bold;
+}
+.coinItem p{
+    font-size: 17px;
+}
+/*
+.coinItem .fa-level-up-alt{
+    color: var(--color-up);
+}
+.coinItem .fa-level-down-alt{
+    color: var(--color-down);
+}
+*/
+.fa-level-up-alt{
+    color: var(--color-up);
+}
+.fa-level-down-alt{
+    color: var(--color-down);
+}
+.coinItem figure img{
+    width: 28px;
+}
+.coinItem figure figcaption{
+    font-size: 12px;
+}
+
+.ceateAccount .btn{
+    width: 360px;
+    height: 54px;
+    line-height: 54px;
+    padding: 0;
+    border-width: 2px;
+}
+
+.howCard{
+    border: 1px solid var(--color-text);
+    border-radius: 10px;
+    width: 30%;
+    margin:  1.665%;
+}
+.howCard > p{
+    font-size: 24px;
+}
+.howCard h3{
+    font-size: 20px;
+}
+.howCard a{
+    left: 0;
+    bottom: 2em;
+    text-decoration: underline;
+}
+
+.why{
+    
+}
+.why h4{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.rate h3{
+    width: 75px;
+    height: 75px;
+    line-height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+    border: 5px solid var(--color-text);
+}
+
+.rate{
+    
+}
+.rate i.fa-star{
+    color: #999;
+}
+.rate i.active{
+    color: var(--color-text);
+}
+.rateTrue p{
+    font-size: 24px;
+    font-weight: bold;
+}
+.rateTrue p i {
+    font-size: 28px;
+}
+
+.rateTermCard{
+    padding: 0 1rem;
+    border: 1px solid var(--color-text);
+    font-size: 14px;
+}
+.rateTermCard h5{
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.rateTermCard .content{
+    height: 42px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.support h3{
+    font-size: 18px;
+    font-weight: normal;
+}
+.support .fa-circle{
+    color: var(--color-check);
+}
+.supportCard{
+    border: 1px solid var(--color-text);
+    border-radius: 6px;
+    width: 49%;
+}
+.supportCard span{
+    font-size: 14px;
+}
+.supportCard p{
+    font-size: 22px;
+    font-weight: bold;
+}
+.supportCard i{
+    
+}
+
+.payment{
+    
+}
+
+
+.social a{
+    font-size: 25px;
+    font-weight: bold;
+}
+.social a i{
+    font-weight: normal;
+}
+
+.register{
+    
+}
+.progressbar{
+    z-index: 2;
+}
+.progressbar:after{
+    content: '';
+    width: calc(100% - 30px);
+    height: 2px;
+    display: block;
+    position: absolute;
+    background: var(--color-text);
+    right: 5px;
+    top: calc(50% - 14px);
+    z-index: -1;
+}
+.progressbarItem{
+    
+}
+.progressbarItem .rounded-circle{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    background: var(--color-primary);
+    border: 2px solid var(--color-text);
+}
+
+.progressbarItem .rounded-circle.active{
+    background: var(--color-text);
+    color: #fff;
+}
+.progressbarItem .rounded-circle.passed{
+    background: var(--color-text);
+    color: #fff;
+}
+
+form,
+.exchange-frm .input-group-text,
+.form-group,
+.form-control{
+    font-size: 14px;
+}
+.reFrm-top{
+    
+}
+.reFrm-title{
+    font-size: 26px;
+    font-weight: normal;
+}
+.showPass{
+    height: calc(1.5em + .75rem + 2px);
+    border: 1px solid #ced4da;
+    background: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: .25rem;
+    line-height: 2.2rem;
+    color: #ccc;
+}
+
+
+.verifyEmail,
+input:disabled{
+    background: var(--bg-primary) !important;
+    border-color: var(--color-text);
+    color: var(--color-text);
+    width: inherit;
+}
+.verifyEmail + label{
+    top:  6px;
+    right: 0.5em;
+    cursor: pointer;
+}
+
+
+.authenCode{
+    width: inherit;
+}
+
+.security .custom-radio{
+    border: 1px solid var(--color-text);
+}
+
+.walletOfer img{
+    width: 20px;
+}
+
+.progessWrapt{
+    height: 34px;
+}
+.progessPercent{
+    height: 100%;
+}
+
+.nav-v-secon a{
+    border-left: 3px solid;
+    border-color: var(--color-primary);
+}
+.nav-v-secon a.active{
+    border-color: var(--color-text);
+}
+
+#selectCoin option[value="Bitcoin"]{
+    background-image: url(../image/icon/btc.png) no-repeat center center;
+}
+
+.contactPage .fa-circle{
+    color: var(--color-check);
+}
+
+.topFooter h2{
+    font-size: 26px;
+}
+.topFooter > div{
+    width: 20%;
+}
+.topFooter .fa-circle{
+    color: var(--color-check)
+}
+
+
+
+
+
+
+
+
+
+
+
