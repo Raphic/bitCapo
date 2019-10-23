@@ -40,6 +40,15 @@ a:active{
 .text-orange{
     color: var(--color-text) !important; 
 }
+.text-gay{
+    color: #b4b4b4;
+}
+.text-pink{
+    color: #f56bff;
+}
+.text-violet{
+    color: #6367db;
+}
 .font-100{
     font-size: 1rem;
 }

@@ -30,6 +30,12 @@ $(document).ready(function () {
         searching: false
     });
     
+    $('#paymentHistory').DataTable({
+        "bLengthChange": false,
+        "bFilter": true,
+        searching: false
+    });
+    
     $('#priceAlerts').DataTable({
         "bLengthChange": false,
         "bFilter": true,
