@@ -55,6 +55,20 @@ $(document).ready(function () {
         "info": false
     });
     
+    // Animation when click Routing Number && Account Number on link-bank.html
+    $('#inputRNumber').focus(function(){
+        console.log("ádsad");
+        $('#routingNumber').toggleClass('bg-main bg-secon');
+    }).on("focusout",function(){
+        $('#routingNumber').toggleClass('bg-main bg-secon');
+    });
+    
+    $('#inputANumber').focus(function(){
+        console.log("ádsad");
+        $('#accountNumber').toggleClass('bg-main bg-secon');
+    }).on("focusout",function(){
+        $('#accountNumber').toggleClass('bg-main bg-secon');
+    });
 });
 
 

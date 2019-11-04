@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Bit Capo | Verify Payment</title>
+    <title>Bit Capo | Link Card</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     
     <!-- Custom CSS -->
@@ -25,7 +25,7 @@
                         <i class="fas fa-language fa-2x mr-2"></i>
                         <span>English</span>
                     </a>
-                    <div class="dropdown-menu bg-main text-orange" aria-labelledby="selectLang"> 
+                    <div class="dropdown-menu" aria-labelledby="selectLang"> 
                         <a class="dropdown-item" href="#">Spanish</a> 
                         <a class="dropdown-item" href="#">Deutsch</a> 
                         <a class="dropdown-item" href="#">German</a> 
@@ -67,106 +67,62 @@
                             <a class="nav-link pt-md-4 pb-md-3 px-lg-3" href="contact.html">Contact</a>
                         </li>
                     </ul>
-                    
-                    <div class="logined">
-                        <div class="dropdown text-left">
-                            <a class="dropdown-toggle py-0" id="profileMenu" data-toggle="dropdown">
-                                <i class="far fa-user fa-lg mr-2"></i>
-                                <span>Zet</span>
-                            </a>
-                            <div class="dropdown-menu bg-main text-orange" aria-labelledby="profileMenu"> 
-                                <a class="dropdown-item" href="#">My account</a> 
-                                <a class="dropdown-item" href="#">2FA</a> 
-                                <a class="dropdown-item" href="#">Tips and upgrade</a> 
-                                <a class="dropdown-item" href="#">My order history</a> 
-                                <a class="dropdown-item" href="#">My price arlets</a> 
-                                <a class="dropdown-item" href="#">Affiliate program</a> 
-                                <a class="dropdown-item" href="#">Verified payment</a> 
-                                <hr>
-                                <a class="dropdown-item" href="#">Log out</a> 
-                            </div>
-                        </div>
+                    <div>
+                        <a href="#">Sign in</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button class="btn btn-outline-primary" type="submit">Register</button>
                     </div>
                 </div>
             </nav>
         </header>
 
         <main role="main">
-            
-            <div class="bg-main">
-                <div class="container">
-                    <div class="row py-2 py-md-5">
-                        <div class="col-12 verifyPayment">
-                            <h2 class="d-block w-100 my-3"><i>Verify payment methods</i></h2>
-                            <div class="border border-third p-4">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                <p class="mb-0"><b>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</b>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <div class="container">
+                <div class="row py-2 py-md-5">
+                    <div class="register col-md-6 offset-md-3 px-3 px-md-0">
+                        <form class="register-frm bg-secon w-100 p-4 rounded" action="">
+                            <div class="reFrm-top text-center mb-4">
+                                <i class="fas fa-money-check-alt fa-3x mt-0 mb-2 mt-mb-4 mt-md-1"></i>
+                                <h2 class="reFrm-title">Link a card</h2>
                             </div>
-                            
-                            <div class="pl-md-0 mt-md-5 mt-4">
-                                <h4 class="d-inline-block font-weight-light pb-2 border-bottom border-2x border-secon">My verified bank accounts</h4>
-                                <div class="d-flex flex-wrap">
-                                    <table class="table-secon table-striped text-orange table border border-third mb-0 col-md-6 px-0">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">Account name</th>
-                                                <th scope="col">Account number</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><small>011401533</small></td>
-                                                <td><small>091000019</small></td>
-                                            </tr>
-                                            
-                                        </tbody>
-                                    </table>
-                                    <div class="col-md-6 px-0 px-4 py-3 border border-third">
-                                        <h5 class="">Verify new bank account</h5>
-                                        <p><small>Verify your new bank account and start trading immediately</small></p>
-                                        
-                                        <button class="btn btn-primary w-50 more mt-4" type="button">Start bank account verification</button>
-                                    </div>
+                            <hr>
+                            <div class="form-row">
+                                <div class="form-group col-lg-5" title="Input your debit or credit card number">
+                                    <label class="font-weight-bold" for="lcardNumber">Card number</label>
+                                    <input type="number" class="form-control" id="lcardNumber" placeholder="Debit or credit card number"> 
+                                </div>
+                                <div class="form-group col-lg-4" title="Input your expiration date of card">
+                                    <label class="font-weight-bold" for="lExpdate">Exp date</label>
+                                    <input type="date" class="form-control" id="lExpdate" placeholder="Please enter your last name"> 
+                                </div>
+                                <div class="form-group col-lg-3" title="Input your security code of card">
+                                    <label class="font-weight-bold" for="lSecuritycode">Security code</label>
+                                    <input type="number" class="form-control" id="lSecuritycode" placeholder="1213"> 
                                 </div>
                             </div>
                             
-                            <div class="pl-md-0 mt-md-5 mt-4">
-                                <h4 class="d-inline-block font-weight-light pb-2 border-bottom border-2x border-secon">Verified cards</h4>
-                                <div class="d-flex flex-wrap">
-                                    <table class="table-secon table-striped text-orange table border border-third mb-0 col-md-6 px-0">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">Credit Card Number</th>
-                                                <th scope="col">Default</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><i class="fab fa-cc-paypal fa-3x"></i><br><small>378282246310005</small></td>
-                                                <td><small><a href="#"><u>Default</u></a></small><br><small><a href="#"><u>Edit</u></a></small></td>
-                                            </tr>
-                                            <tr>
-                                                <td><i class="fab fa-cc-mastercard fa-3x"></i><br><small>5555555555554444</small></td>
-                                                <td><small><a href="#"><u>Edit</u></a></small></td>
-                                            </tr>
-                                           
-                                        </tbody>
-                                    </table>
-                                    <div class="col-md-6 px-0 px-4 py-3 border border-third">
-                                        <h5 class="">Verify new Credit Card Number</h5>
-                                        <p><small>Verify your new Credit Card Number and start trading immediately</small></p>
-                                        <div>
-                                            <a href="#"><i class="fab fa-cc-paypal fa-3x"></i></a>
-                                            <a href="#"><i class="fab fa-cc-mastercard fa-3x"></i></a>
-                                            <a href="#"><i class="fab fa-cc-jcb fa-3x"></i></a>
-                                            <a href="#"><i class="fab fa-cc-apple-pay fa-3x"></i></a>
-                                        </div>
-                                        <button class="btn btn-primary w-50 more mt-4" type="button">Add New Credit Card Number</button>
-                                    </div>
+                            <div class="form-row mb-3 mt-2">
+                                <div class="form-group col-md-4">
+                                    <label class="font-weight-bold" for="lCardtye">Card type</label>
+                                    <select class="form-control" id="lCardtye">
+                                        <option>Choose...</option>
+                                        <option>Visa</option>
+                                        <option>MasterCard</option>
+                                        <option>American Express</option>
+                                        <option>Discover</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group col-md-8">
+                                    <label class="font-weight-bold" for="paymentMethod">Billing address</label>
+                                    <select class="form-control" id="paymentMethod">
+                                        <option>1 Main St, San Jose, CA 95131</option>
+                                        <option><a href="#">+ Add new address</a></option>
+                                    </select>
                                 </div>
                             </div>
                             
-                        </div>
+                            <button type="submit" class="btn btn-primary position-relative w-100 mb-3">Link card</button>
+                        </form>
                     </div>
                 </div>
             </div>
